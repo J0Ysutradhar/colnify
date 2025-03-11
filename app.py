@@ -9,14 +9,13 @@ st.set_page_config(page_title="Clonify", page_icon="🔊", layout="wide")
 st.sidebar.title("Navigation")
 page = st.sidebar.radio("Go to", ["Text to Speech", "Voice Cloner"])
 
-# API Headers (Update with your credentials)
+# API Headers (Update with your credentials) https://docs.play.ai/api-reference/text-to-speech/play-dialog/post-playdialog
 headers = {
                 "AUTHORIZATION": "ak-cce693da67ce45e9a47cbc172278d672",
                 "X-USER-ID": "YeYce8PYkGVA3QEM8uU1KO79C9Y2",
                 "Content-Type": "application/json"
             }
-
-#voiceclone
+#play HT
 HEADERS = {
     "accept": "application/json",
     "AUTHORIZATION": "f8bba56ae13444929b9c7decf7dd1f2e",
@@ -26,7 +25,7 @@ HEADERS = {
 # PAGE 1: TEXT TO SPEECH (Existing Functionality)
 # --------------------------------------
 if page == "Text to Speech":
-    st.title("🎤 Clonify - Text to Speech")
+    st.title("🎤 Clonify Ai- Text to Speech")
 
     txt = st.text_area("Enter Text:")
     
@@ -49,10 +48,13 @@ if page == "Text to Speech":
     voices = {
         "Sharuk Khan":"s3://voice-cloning-zero-shot/57539b64-ff1a-4f8a-926f-7fefb5427f93/srk/manifest.json",
         "MD Younus": "s3://voice-cloning-zero-shot/616478fb-18e7-42da-829f-218da2d7108b/joy/manifest.json",
+        "Joy": "s3://voice-cloning-zero-shot/d8b5837f-38b1-4d9e-ab74-6c552f2e0632/original/manifest.json",
+        "Modi": "s3://voice-cloning-zero-shot/ad8d759d-818a-4218-8680-1cf79ccbcb2e/original/manifest.json",
         "Adolfo": "s3://voice-cloning-zero-shot/d82d246c-148b-457f-9668-37b789520891/adolfosaad/manifest.json",
         "Olivia": "s3://voice-cloning-zero-shot/9fc626dc-f6df-4f47-a112-39461e8066aa/oliviaadvertisingsaad/manifest.json",
         "Billy": "s3://voice-cloning-zero-shot/37e5af8b-800a-4a76-8f31-4203315f8a9e/billysaad/manifest.json",
         "Bryan": "s3://voice-cloning-zero-shot/4c627545-b9c0-4791-ae8e-f48f5475247c/bryansaad/manifest.json",
+
         "🛠️ Use Custom Voice": "custom"
     }
     voice = st.selectbox("Voice Model:", list(voices.keys()))
@@ -164,3 +166,4 @@ elif page == "Voice Cloner":
 
         else:
             st.warning("Please upload a file and enter a voice name.")
+
