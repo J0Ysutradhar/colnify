@@ -11,8 +11,8 @@ page = st.sidebar.radio("Go to", ["Text to Speech", "Voice Cloner"])
 
 # API Headers (Update with your credentials)
 headers = {
-                "AUTHORIZATION": "951f7b0b6a0545e68cf80f42587abff5",
-                "X-USER-ID": "ZGcsrnuAONekPPkEJjCaGKkhDOE3",
+                "AUTHORIZATION": "f8bba56ae13444929b9c7decf7dd1f2e",
+                "X-USER-ID": "3folRXPfRlPupj0RzWHuCPq4tAo2",
                 "Content-Type": "application/json"
             }
 
