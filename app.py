@@ -6,7 +6,7 @@ import os
 st.set_page_config(page_title="Clonify", page_icon="🔊", layout="wide")
 
 # Sidebar navigation
-st.sidebar.title("Navigation")
+st.sidebar.title("MetaxSoul Studio")
 page = st.sidebar.radio("Go to", ["Text to Speech", "Voice Cloner"])
 
 # API Headers (Update with your credentials) https://docs.play.ai/api-reference/text-to-speech/play-dialog/post-playdialog
@@ -46,10 +46,13 @@ if page == "Text to Speech":
 
     # Voice selection
     voices = {
+        
+        "Celebrety's Voice👇":"s3://voice-cloning-zero-shot/57539b64-ff1a-4f8a-926f-7fefb5427f93/srk/manifest.json",
         "Sharuk Khan":"s3://voice-cloning-zero-shot/57539b64-ff1a-4f8a-926f-7fefb5427f93/srk/manifest.json",
         "MD Younus": "s3://voice-cloning-zero-shot/616478fb-18e7-42da-829f-218da2d7108b/joy/manifest.json",
         "Joy": "s3://voice-cloning-zero-shot/d8b5837f-38b1-4d9e-ab74-6c552f2e0632/original/manifest.json",
         "Modi": "s3://voice-cloning-zero-shot/ad8d759d-818a-4218-8680-1cf79ccbcb2e/original/manifest.json",
+        "--------------------------------":"null",
         "Adolfo": "s3://voice-cloning-zero-shot/d82d246c-148b-457f-9668-37b789520891/adolfosaad/manifest.json",
         "Olivia": "s3://voice-cloning-zero-shot/9fc626dc-f6df-4f47-a112-39461e8066aa/oliviaadvertisingsaad/manifest.json",
         "Billy": "s3://voice-cloning-zero-shot/37e5af8b-800a-4a76-8f31-4203315f8a9e/billysaad/manifest.json",
@@ -57,7 +60,7 @@ if page == "Text to Speech":
 
         "🛠️ Use Custom Voice": "custom"
     }
-    voice = st.selectbox("Voice Model:", list(voices.keys()))
+    voice = st.selectbox("Select Voice Model:", list(voices.keys()))
 
     # If user selects custom voice, show input field
     custom_voice_url = ""
@@ -124,7 +127,8 @@ if page == "Text to Speech":
 # PAGE 2: VOICE CLONER
 # --------------------------------------
 elif page == "Voice Cloner":
-    st.title("🎙️ Voice Cloner - Upload & Clone Voice")
+    st.title("🎙️ Voice Cloner - Clone voice instantly")
+    st.caption("Create anyone voice colne with 30sec of audio")
 
     uploaded_file = st.file_uploader("Upload a voice sample (MP3)", type=["mp3"])
     voice_name = st.text_input("Enter a name for the cloned voice:")
@@ -166,4 +170,13 @@ elif page == "Voice Cloner":
 
         else:
             st.warning("Please upload a file and enter a voice name.")
-
+    st.markdown("_________________")
+    st.caption("Having problem with voice clone?")
+    st.markdown(" Email me with the voice file"
+    " I will notify you with the cloned voice"
+    " E-mail: joysutradharpc@gmail.com")
+    st.markdown("_________________")
+    ##### Disclaimer
+    st.markdown("This Ai tool is only for ***Educational Purposes***.")
+    st.markdown("Don't Misuse this tool")
+    
