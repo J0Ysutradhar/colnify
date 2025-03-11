@@ -9,13 +9,13 @@ st.set_page_config(page_title="Clonify", page_icon="🔊", layout="wide")
 st.sidebar.title("MetaxSoul Studio")
 page = st.sidebar.radio("Go to", ["Text to Speech", "Voice Cloner"])
 
-# API Headers (Update with your credentials) https://docs.play.ai/api-reference/text-to-speech/play-dialog/post-playdialog
+# API Headers new vr
 headers = {
                 "AUTHORIZATION": "ak-cce693da67ce45e9a47cbc172278d672",
                 "X-USER-ID": "YeYce8PYkGVA3QEM8uU1KO79C9Y2",
                 "Content-Type": "application/json"
             }
-#play HT
+#play old vr
 HEADERS = {
     "accept": "application/json",
     "AUTHORIZATION": "f8bba56ae13444929b9c7decf7dd1f2e",
