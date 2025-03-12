@@ -35,7 +35,6 @@ streamlit run app.py
 ```
 
 
-```
 
 ## 🖥️ Usage Guide
 
