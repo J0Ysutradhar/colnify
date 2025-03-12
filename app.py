@@ -176,7 +176,7 @@ elif page == "Voice Cloner":
     " I will notify you with the cloned voice"
     " E-mail: joysutradharpc@gmail.com")
     st.markdown("_________________")
-    ##### Disclaimer
+    ##### Disclaime
     st.markdown("This Ai tool is only for ***Educational Purposes***.")
     st.markdown("Don't Misuse this tool")
     
