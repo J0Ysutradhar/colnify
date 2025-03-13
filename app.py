@@ -146,7 +146,7 @@ elif page == "Voice Cloner":
 
                 response = requests.post(
                     "https://api.play.ht/api/v2/cloned-voices/instant",
-                    data=payload,  # 🔥 FIX: Use 'data' instead of 'json'
+                    data=payload,  # FIX: Use 'data' instead of 'json'
                     files=files,
                     headers=HEADERS
                 )
