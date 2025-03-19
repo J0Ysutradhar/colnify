@@ -4,7 +4,7 @@ import os
 
 # Set up Streamlit multipage navigationxx
 st.set_page_config(page_title="Clonify", page_icon="🔊", layout="wide")
-
+o
 # Sidebar navigation
 st.sidebar.title("MetaxSoul Studio")
 page = st.sidebar.radio("Go to", ["Text to Speech", "Voice Cloner"])
