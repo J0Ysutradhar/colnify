@@ -1,4 +1,4 @@
-# Clonify - AI Text to Speech & Voice Cloner1
+# Clonify - AI Text to Speech & Voice Cloner
 
 Clonify is an AI-powered web application that converts text into speech and enables users to clone voices instantly. This project is built using Streamlit and utilizes the Play.ht API for high-quality voice synthesis.
 
