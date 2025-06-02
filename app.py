@@ -10,8 +10,8 @@ st.sidebar.title("MetaxSoul Studio v2")
 page = st.sidebar.radio("Go to", ["Text to Speech", "Voice Cloner"])
 
 # API Headers new vr
-headers = {
-                "AUTHORIZATION": "ak-3297931ffb574c55a41cc35c749aca36",
+headers = {     'Authorization': f'Bearer {ak-3297931ffb574c55a41cc35c749aca36}',
+                # "AUTHORIZATION": "ak-3297931ffb574c55a41cc35c749aca36",
                 "X-USER-ID": "lIzniaY9gyP656TTz65dYQ6hmjF3",
                 "Content-Type": "application/json"
             }
