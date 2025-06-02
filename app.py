@@ -11,8 +11,8 @@ page = st.sidebar.radio("Go to", ["Text to Speech", "Voice Cloner"])
 
 # API Headers new vr
 headers = {
-                "AUTHORIZATION": "ak-cce693da67ce45e9a47cbc172278d672",
-                "X-USER-ID": "YeYce8PYkGVA3QEM8uU1KO79C9Y2",
+                "AUTHORIZATION": "ak-065e82c8505346e6bb1a53708244dbc3",
+                "X-USER-ID": "oXrUBNDctThbYFAs3XzUKjXd1aw1",
                 "Content-Type": "application/json"
             }
 #play old vr
