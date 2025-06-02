@@ -6,7 +6,7 @@ import os
 st.set_page_config(page_title="Clonify", page_icon="🔊", layout="wide")
 
 # Sidebar navigation
-st.sidebar.title("MetaxSoul Studio")
+st.sidebar.title("MetaxSoul Studio v2")
 page = st.sidebar.radio("Go to", ["Text to Speech", "Voice Cloner"])
 
 # API Headers new vr
